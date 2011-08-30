@@ -1,0 +1,14 @@
+This is an utility for transposing an audio file, by specifying the desired interval in semitones. 
+
+Note that this does **not** preserve note durations, as it is intended as a simple utility for MIR tasks (in particular, the alignment of two recordings of the same piece with different key signatures).
+
+Compile with:
+g++ -o transposer -O3 -lsndfile -lsamplerate transposer.cpp
+
+Uses libsndfile (http://www.mega-nerd.com/libsndfile/) and libsamplerate (http://www.mega-nerd.com/SRC/index.html).
+
+Code is released under GPL.
+
+Nicola Montecchio
+nicola.montecchio@gmail.com
+Aug 2011
